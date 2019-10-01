@@ -45,10 +45,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -160,6 +167,171 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Access_Control.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ailment.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Allergy.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Appointment.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetRole.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUser.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserClaim.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserLogin.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Backlog.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Consultation.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Consultation_Ailment.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Consultation_Procedure.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C__MigrationHistory.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\database_firewall_rules.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DrSavvy.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrSavvy.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DrSavvy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DrSavvy.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrSavvy.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Employee.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Employee_Role.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Institute.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Institute_Type.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Medical_Aid_Claim.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Medical_Aid_Company.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Medical_Aid_Scheme.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Medication.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MobileApp.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Order.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Order_Line.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Order_Payment.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Order_Status.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Patient.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Patient_Allergy_List.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Payment.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Payment_Type.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Prescription_Line.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Price.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Procedure.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product_Procedure.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product_Type.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Reconcilliation.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Referral.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Referral_Test.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sick_Note.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Stock_Take.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Stock_take_Line.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Supplier.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Test.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Test_Type.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Timeslot.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Title.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Xray.cs">
+      <DependentUpon>DrSavvy.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -171,6 +343,16 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Models\DrSavvy.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DrSavvy.Context.cs</LastGenOutput>
+      <DependentUpon>DrSavvy.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\DrSavvy.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DrSavvy.edmx</DependentUpon>
+      <LastGenOutput>DrSavvy.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -192,6 +374,13 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <EntityDeploy Include="Models\DrSavvy.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DrSavvy.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\DrSavvy.edmx.diagram">
+      <DependentUpon>DrSavvy.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -215,7 +404,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -245,6 +433,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
